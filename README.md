@@ -1,6 +1,9 @@
 # Wi-Fi Antenna Characterization and Localization Dataset
 
-This repository contains the code and measurement data for a Wi-Fi-based antenna characterization and indoor direction-of-arrival (DoA) estimation system. The setup uses a **Radxa SBC** configured as a 5 GHz 802.11 access point (AP) to collect RF metrics — RSSI, bitrate, MCS index, and throughput — across multiple channels and antenna types, both in an anechoic chamber and in a real indoor environment.
+This repository contains the code for a Wi-Fi-based antenna characterization and indoor direction-of-arrival (DoA) estimation system. The setup uses a **Radxa 3a** configured as a 5 GHz 802.11 access point (AP) to collect RF metrics — RSSI, bitrate, MCS index, and throughput — across multiple channels and antenna types, both in an anechoic chamber and in a real indoor environment.
+
+Please, if you want to use this code, don't forget to cite the source.  
+G. Inglés-Muñoz, A. Gil-Martínez, J. A. López-Pastor, A. Algaba-Brazález, A. Skarmeta and J. L. Gómez-Tornero, "Integrated Sensing and Communication Using a Smart Leaky-Wave Antenna," in IEEE Transactions on Network Science and Engineering, vol. 13, pp. 6871-6890, 2026, doi: 10.1109/TNSE.2026.3662043
 
 **Authors:** Guillermo Inglés Muñoz, José Antonio López Pastor  
 **Date:** April 2026  
@@ -39,7 +42,7 @@ This repository contains the code and measurement data for a Wi-Fi-based antenna
 │   ├── Process_indoor_monopulse_localization.m # DoA estimation using monopulse ratio
 │   └── Process_indoor_comparison.m            # Cross-antenna and cross-method comparison
 │
-├── Anechoic_chamber_data/      # Measured data from anechoic chamber
+├── Anechoic_chamber_data/      # Measured data from anechoic chamber. These files are in the Zenodo repository: https://zenodo.org/records/19682934
 │   └── LWA/<ch>/Measurements_Ch<ch>_BW80.{mat,txt}
 │
 └── Indoor_test_environment_data/  # Measured data from indoor environment
@@ -159,19 +162,6 @@ Edit the `antenna`, `measurement_angle`, and path variables at the top of each s
 ### 5. Process the data
 
 After acquisition, run the processing scripts in `05_Test_Environment/` to compute steering vectors, DoA estimates, and generate plots.
-
----
-
-## Channels Tested
-
-The repository includes configurations and measured data for the following 5 GHz channels at 80 MHz bandwidth:
-
-| Band | Channels |
-|------|----------|
-| UNII-1 | 36, 40, 44, 48 |
-| UNII-2A | 52, 56, 60, 64 |
-| UNII-2C | 100, 104, 108, 112, 116, 120, 124, 128, 132, 136, 140, 144 |
-| UNII-3 | 149, 153, 157, 161 |
 
 ---
 
