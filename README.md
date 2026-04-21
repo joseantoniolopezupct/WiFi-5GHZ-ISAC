@@ -1,4 +1,4 @@
-# Wi-Fi Antenna Characterization and Localization Dataset
+# Code for "Integrated Sensing and Communication Dataset Employing Leaky-Wave Antenna"
 
 This repository contains the code for a Wi-Fi-based antenna characterization and indoor direction-of-arrival (DoA) estimation system. The setup uses a **Radxa 3a** configured as a 5 GHz 802.11 access point (AP) to collect RF metrics — RSSI, bitrate, MCS index, and throughput — across multiple channels and antenna types, both in an anechoic chamber and in a real indoor environment.
 
